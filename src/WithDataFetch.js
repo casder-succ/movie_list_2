@@ -5,7 +5,7 @@ const WithDataFetch = (Component) => {
         const APIKey = '1163289e-3479-4372-9d63-b8233ef3e6b4'
         const [loading, setLoading] = useState(true);
         const [errorMessage, setErrorMessage] = useState('');
-        const [data, setData] = useState({});
+        const [data, setData] = useState([]);
 
         useEffect(() => {
             const dataFetch = async (path, key) => {
