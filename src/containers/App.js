@@ -1,6 +1,7 @@
 import React from "react";
 import {createGlobalStyle} from "styled-components";
 import MovieList from "./MovieList";
+import Header from "../components/Header/Header";
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -17,6 +18,7 @@ function App() {
     return (
         <>
             <GlobalStyles/>
+            <Header/>
             <MovieList
                 dataSource={'https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1'}
             />
